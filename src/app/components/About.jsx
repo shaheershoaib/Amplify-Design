@@ -14,7 +14,6 @@ export default function About() {
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Engineering Excellence 
-              <span className="text-blue-600"> Since 2022</span>
             </h2>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">

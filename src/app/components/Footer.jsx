@@ -13,20 +13,14 @@ export default function Footer() {
     Company: [
       'About Us',
       'Our Team',
-      'Careers',
-      'News & Updates'
     ],
     Resources: [
-      'Case Studies',
       'Project Portfolio',
-      'Technical Blog',
       'Industry Standards'
     ],
     Support: [
       'Contact Us',
       'Remote Consultation',
-      'Documentation',
-      'Technical Support'
     ]
   };
 
@@ -46,7 +40,7 @@ export default function Footer() {
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Specialized electrical engineering services based in Calgary, Alberta. 
-              We provide remote consultation and on-site services across Western Canada.
+              We provide remote consultation and on-site services.
             </p>
             
             {/* Social Links */}

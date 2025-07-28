@@ -104,12 +104,6 @@ export default function Projects() {
           ))}
         </div>
         
-        {/* View All Projects CTA */}
-        <div className="text-center mt-16">
-          <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-            View All Projects
-          </button>
-        </div>
       </div>
     </section>
   );
