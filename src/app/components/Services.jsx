@@ -47,7 +47,7 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Specialized engineering solutions for modern buildings, focusing on safety, 
+            Specialized electrical engineering solutions for modern buildings, focusing on safety, 
             efficiency, and code compliance with innovative design approaches that exceed industry standards.
           </p>
         </div>
@@ -101,16 +101,34 @@ export default function Services() {
             Get expert electrical engineering consultation tailored to your specific needs. 
             Let's discuss how we can bring your vision to life with precision and innovation.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          
+          {/* Primary CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a 
               href="#contact"
               className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Get Electrical Design
+            </a>
+            <a 
+              href="#contact"
+              className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Fire Alarm Design/Verification
+            </a>
+          </div>
+          
+          {/* Secondary CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a 
+              href="#contact"
+              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300"
             >
               Get A Consultation
             </a>
             <a 
               href="#projects"
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300"
+              className="border-2 border-gray-400 text-gray-600 hover:bg-gray-600 hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300"
             >
               View Our Portfolio
             </a>

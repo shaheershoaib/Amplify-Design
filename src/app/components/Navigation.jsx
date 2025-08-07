@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Navigation() {
@@ -7,6 +8,7 @@ export default function Navigation() {
 
   const navLinks = [
     { href: '#services', label: 'Services' },
+    { href: '#additional-services', label: 'Additional Services' },
     { href: '#about', label: 'About' },
     { href: '#projects', label: 'Projects' },
   ];
@@ -16,9 +18,15 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">A</span>
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="relative w-12 h-12">
+              <Image
+                src="/logo.png"
+                alt="Amplify Design Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <span className="text-2xl font-bold text-gray-900">
               Amplify <span className="text-blue-600">Design</span>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,9 +32,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">A</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Amplify Design Logo"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <span className="text-2xl font-bold">
                 Amplify <span className="text-blue-400">Design</span>
               </span>
