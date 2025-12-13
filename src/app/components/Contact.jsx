@@ -51,8 +51,8 @@ export default function Contact() {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
             <p className="text-gray-600">
-              <a href="mailto:admin@amplifydesign.com" className="hover:text-blue-600 transition-colors">
-                admin@amplifydesign.com
+              <a href="mailto:@amplifydesign.com" className="hover:text-blue-600 transition-colors">
+                ibrar@amplifydesign.com
               </a>
             </p>
           </div>
@@ -68,7 +68,7 @@ export default function Contact() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
-              href="mailto:me@amplifydesign.com"
+              href="mailto:ibrar@amplifydesign.com"
               className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Send Email
