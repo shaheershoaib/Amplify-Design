@@ -1,3 +1,5 @@
+import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
 import Services from '../../components/Services';
 import AdditionalServices from '../../components/AdditionalServices';
@@ -7,13 +9,17 @@ import Contact from '../../components/Contact';
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <Services />
-      <AdditionalServices />
-      <About />
-      <Projects />
-      <Contact />
-    </main>
+    <>
+      <Navigation />
+      <main className="min-h-screen pt-20">
+        <Hero />
+        <Services />
+        <AdditionalServices />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }

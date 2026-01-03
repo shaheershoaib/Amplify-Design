@@ -190,7 +190,7 @@ export default function IbrarPortfolio() {
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-slate-200 pt-10">
             {[
               { label: 'Experience', value: '7+ Years' },
-              { label: 'Projects', value: '50+ Delivered' },
+              { label: 'Projects', value: '100+ Delivered' },
               { label: 'License', value: 'P.Eng Certified' },
               { label: 'Specialty', value: 'Critical Systems' }
             ].map((stat, i) => (
