@@ -7,6 +7,7 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
+    { href: '/ibrar-portfolio', label: 'Portfolio', external: true },
     { href: '#services', label: 'Services' },
     { href: '#additional-services', label: 'Additional Services' },
     { href: '#about', label: 'About' },
@@ -36,13 +37,23 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
-              >
-                {link.label}
-              </a>
+              link.external ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             <a href="#contact" className="text-white bg-blue-600 p-2 rounded-md hover:bg-gradient-to-r from-blue-700 to-indigo-700">
               Contact
@@ -69,14 +80,25 @@ export default function Navigation() {
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
+                link.external ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )
               ))}
             </div>
           </div>
