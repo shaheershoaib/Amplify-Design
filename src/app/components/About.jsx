@@ -82,7 +82,7 @@ export default function About() {
           <div className="text-center bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Meet Our Lead Engineer</h3>
             <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-              Explore the portfolio of Ibrar Ahmad, P.Eng - showcasing 7+ years of experience in critical electrical systems.
+              Explore the portfolio of Ibrar Ahmad, P.Eng - showcasing 5+ years of experience in critical electrical systems.
             </p>
             <a 
               href="/ibrar-portfolio"

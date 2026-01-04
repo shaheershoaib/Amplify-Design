@@ -189,10 +189,10 @@ export default function IbrarPortfolio() {
           {/* Stats */}
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-slate-200 pt-10">
             {[
-              { label: 'Experience', value: '7+ Years' },
+              { label: 'Experience', value: '5+ Years' },
               { label: 'Projects', value: '100+ Delivered' },
-              { label: 'License', value: 'P.Eng Certified' },
-              { label: 'Specialty', value: 'Critical Systems' }
+              { label: 'License', value: 'P.Eng' },
+              { label: 'Specialty', value: 'Building/Communication Systems' }
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center">
                 <span className="text-3xl font-bold text-slate-900">{stat.value}</span>
